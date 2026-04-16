@@ -22,6 +22,8 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no ubuntu@3.24.124.210 << 'EOF'
         cd /var/www/t4
-        git pull origin main
+        git config --global --add safe.directory /var/www/t4
+        git fetch --all
+        git reset --hard origin/main
         sudo systemctl restart nginx
         EOF
