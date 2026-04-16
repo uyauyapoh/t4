@@ -6,27 +6,28 @@
 </head>
 <body>
 
-<h1>CI/CD BERHASIL </h1>
-<h2>Data Pasien</h2>
+<div class="container">
+  <h1>🏥 Data Pasien</h1>
 
-<form id="form">
-  <input type="text" id="nama" placeholder="Nama" required>
-  <input type="number" id="umur" placeholder="Umur" required>
-  <input type="text" id="diagnosa" placeholder="Diagnosa" required>
-  <button type="submit">Simpan</button>
-</form>
+  <form id="form">
+    <input type="text" id="nama" placeholder="Nama" required>
+    <input type="number" id="umur" placeholder="Umur" required>
+    <input type="text" id="diagnosa" placeholder="Diagnosa" required>
+    <button type="submit">Simpan</button>
+  </form>
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Nama</th>
-      <th>Umur</th>
-      <th>Diagnosa</th>
-      <th>Aksi</th>
-    </tr>
-  </thead>
-  <tbody id="dataPasien"></tbody>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Umur</th>
+        <th>Diagnosa</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody id="dataPasien"></tbody>
+  </table>
+</div>
 
 <script src="script.js"></script>
 </body>
